@@ -83,7 +83,7 @@ public class MemberDAO {
 	}
 	
 	public int update(Member member) {
-		int ret = -1; // 0 이상이면 해당 아이디가 존재하므로 수정, -1이하이면 수정 실패		
+		int ret = -1; // 0 이상이면 해당 아이디.가 존재하므로 수정, -1이하이면 수정 실패		
 		try {
 			int index = searchByID(member);
 			if(index > 0) { // -1이면 검색 실패, 삭제 불가능, 0이상이어야 삭제가 가능
